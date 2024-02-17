@@ -7,11 +7,14 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { CommonModule } from '@angular/common';
 import { NewMomentComponent } from './components/pages/new-moment/new-moment.component';
 import { MomentFormComponent } from './components/moment-form/moment-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,MomentFormComponent, NewMomentComponent,HeaderComponent, FooterComponent, HomeComponent, AboutComponent,RouterModule,RouterLinkActive, RouterLink, CommonModule],
+  imports: [HttpClientModule,FormsModule, ReactiveFormsModule ,RouterOutlet,MomentFormComponent, NewMomentComponent,HeaderComponent, FooterComponent, HomeComponent, AboutComponent,RouterModule,RouterLinkActive, RouterLink, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
