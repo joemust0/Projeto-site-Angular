@@ -9,13 +9,15 @@ import { NewMomentComponent } from './components/pages/new-moment/new-moment.com
 import { MomentFormComponent } from './components/moment-form/moment-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MessagesComponent } from './components/messages/messages.component';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HttpClientModule,FormsModule, ReactiveFormsModule ,RouterOutlet,MomentFormComponent, NewMomentComponent,HeaderComponent, FooterComponent, HomeComponent, AboutComponent,RouterModule,RouterLinkActive, RouterLink, CommonModule],
+  imports: [HttpClientModule,MessagesComponent,FontAwesomeModule,FormsModule, ReactiveFormsModule ,RouterOutlet,MomentFormComponent, NewMomentComponent,HeaderComponent, FooterComponent, HomeComponent, AboutComponent,RouterModule,RouterLinkActive, RouterLink, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
