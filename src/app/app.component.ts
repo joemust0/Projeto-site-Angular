@@ -7,10 +7,11 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { CommonModule } from '@angular/common';
 import { NewMomentComponent } from './components/pages/new-moment/new-moment.component';
 import { MomentFormComponent } from './components/moment-form/moment-form.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MessagesComponent } from './components/messages/messages.component';
+
 
 
 
@@ -23,4 +24,8 @@ import { MessagesComponent } from './components/messages/messages.component';
 })
 export class AppComponent {
   title = 'momentos';
+  baseApiUrl = `http://localhost:3333/`;
+  
+  constructor(private http: HttpClient) {  }
+
 }

@@ -5,6 +5,8 @@ import { Moment } from '../../../Moment';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { CommonModule } from '@angular/common';
 
+
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -15,7 +17,7 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent implements OnInit {
 allMoments: Moment[] = []
 moments: Moment[] = []
-
+baseApiUrl = `http://localhost:3333/`;
 //todo search
 
 constructor(private momentService: MomentService){}
